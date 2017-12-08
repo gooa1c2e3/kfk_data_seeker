@@ -1,0 +1,110 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module kfk_data_seeker</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>kfk_data_seeker</strong></big></big> (version 0.0.1_py27)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///D:/octopus/octopus_code/seeker/light/kfk_data_seeker.py">d:\octopus\octopus_code\seeker\light\kfk_data_seeker.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Company:&nbsp;CHT-PT<br>
+#&nbsp;Author:&nbsp;Chien-Yu&nbsp;Chen<br>
+#&nbsp;Date:&nbsp;2017/11/23<br>
+#&nbsp;Mail:&nbsp;gooa1c2e3@gmail.com<br>
+#&nbsp;Support:&nbsp;Python&nbsp;2.7</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top><a href="traceback.html">traceback</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="kfk_data_seeker.html#Seeker">Seeker</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Seeker">class <strong>Seeker</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Datetime&nbsp;string&nbsp;format:&nbsp;'%Y-%m-%dT%H:%M:%S'&nbsp;<br>
+eg.&nbsp;2017-12-01T12:31:54&nbsp;for&nbsp;2017/12/01&nbsp;12:31:54<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Seeker-__init__"><strong>__init__</strong></a>(self, start_datetime, topic, brokers<font color="#909090">=None</font>, partition<font color="#909090">=None</font>, seek_num<font color="#909090">=3</font>, path<font color="#909090">=None</font>, force<font color="#909090">=None</font>)</dt></dl>
+
+<dl><dt><a name="Seeker-assign_topic"><strong>assign_topic</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Seeker-close"><strong>close</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Seeker-connect_borkers"><strong>connect_borkers</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Seeker-datetime2timestamp"><strong>datetime2timestamp</strong></a>(self, datetime_string)</dt></dl>
+
+<dl><dt><a name="Seeker-get_offset"><strong>get_offset</strong></a>(self, _timestamp)</dt></dl>
+
+<dl><dt><a name="Seeker-reconnect_brokers"><strong>reconnect_brokers</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Seeker-seek_and_poll"><strong>seek_and_poll</strong></a>(self)</dt><dd><tt>Wrap&nbsp;KafkaConsumer.seek&nbsp;&amp;&nbsp;poll&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="Seeker-seek_beginning_offset"><strong>seek_beginning_offset</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Seeker-seek_last_offset"><strong>seek_last_offset</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>beginning_data</strong></dt>
+</dl>
+<dl><dt><strong>brokers</strong></dt>
+</dl>
+<dl><dt><strong>file_path</strong></dt>
+</dl>
+<dl><dt><strong>fource</strong></dt>
+</dl>
+<dl><dt><strong>last_data</strong></dt>
+</dl>
+<dl><dt><strong>partition</strong></dt>
+</dl>
+<dl><dt><strong>seek_num</strong></dt>
+</dl>
+<dl><dt><strong>set_brokers</strong></dt>
+</dl>
+<dl><dt><strong>set_partition</strong></dt>
+</dl>
+<dl><dt><strong>set_start_datetime</strong></dt>
+<dd><tt>The&nbsp;start&nbsp;datetime&nbsp;in&nbsp;seeking&nbsp;data&nbsp;protcol</tt></dd>
+</dl>
+<dl><dt><strong>set_topic</strong></dt>
+</dl>
+<dl><dt><strong>start_datetime</strong></dt>
+<dd><tt>The&nbsp;start&nbsp;datetime&nbsp;in&nbsp;seeking&nbsp;data&nbsp;protcol</tt></dd>
+</dl>
+<dl><dt><strong>start_offset</strong></dt>
+</dl>
+<dl><dt><strong>start_timestamp</strong></dt>
+</dl>
+<dl><dt><strong>topic</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__version__</strong> = '0.0.1_py27'</td></tr></table>
+</body></html>
